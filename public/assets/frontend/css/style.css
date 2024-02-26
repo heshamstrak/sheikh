@@ -20783,3 +20783,8 @@ body.home_variant_16 .back-to-top {
     -ms-grid-row-align: center;
     align-self: center;
 }
+
+.navbar-area.nav-style-01 .nav-container .nav-right-content {
+    
+    display: none;
+}

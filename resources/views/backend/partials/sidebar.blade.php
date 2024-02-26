@@ -126,7 +126,7 @@
                         </ul>
                     </li>
 
-
+{{-- 
 
                     @if(check_page_permission_by_string('Services'))
                     <li class="main_dropdown
@@ -255,7 +255,7 @@
                         <a href="{{route('admin.counterup')}}" aria-expanded="true"><i class="ti-exchange-vertical"></i>
                             <span>{{__('Counterup')}}</span></a>
                     </li>
-                    @endif
+                    @endif --}}
                     <li class="main_dropdown
                     @if(request()->is(['admin-home/quote-manage/*',
                     'admin-home/package/*',

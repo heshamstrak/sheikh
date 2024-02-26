@@ -21,6 +21,7 @@
 @section('page-title')
     {{$blog_post->title}}
 @endsection
+<img src="{{asset('assets/banner.jpg')}}" alt="" style="width: 100%; height: 480px">
 @section('content')
     <section class="blog-details-content-area padding-top-100 padding-bottom-60">
         <div class="container">

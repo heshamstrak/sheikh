@@ -11,6 +11,7 @@
     {!! render_og_meta_image_by_attachment_id(get_static_option('blog_page_'.$user_select_lang_slug.'_meta_image')) !!}
 @endsection
 @section('content')
+<img src="{{asset('assets/banner.jpg')}}" alt="" style="width: 100%; height: 480px">
 
     <section class="blog-content-area padding-120">
         <div class="container">

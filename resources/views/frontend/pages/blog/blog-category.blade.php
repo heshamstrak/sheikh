@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-
+<img src="{{asset('assets/banner.jpg')}}" alt="" style="width: 100%; height: 480px">
     <section class="blog-content-area padding-top-100 padding-bottom-80">
         <div class="container">
             <div class="row">

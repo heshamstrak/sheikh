@@ -1,7 +1,7 @@
 <?php
    $rtl_condition = get_user_lang_direction() == 'rtl' ? 'true' : 'false';
 ?>
-<img src="" alt="">
+<img src="<?php echo e(asset('assets/banner.jpg')); ?>" alt="" style="width: 100%; height: 480px">
 <div class="header-style-03 home-20 header-variant-20">
     <nav class="navbar navbar-area navbar-expand-lg">
         <div class="container container-two nav-container">
@@ -43,7 +43,13 @@
 
 
                         <div class="single-date">
-                            <span id="current-date" class="update-date"><?php echo e(\Carbon\Carbon::today()->format('D,d M Y')); ?></span>
+                            <ul>
+                                <li>facebook</li>
+                                <li>facebook</li>
+                                <li>facebook</li>
+                                <li>facebook</li>
+                                <li>facebook</li>
+                            </ul>
                         </div>
                     </div>
                     <!-- SearcBar -->
@@ -62,16 +68,16 @@
 </div>
 
 <div class="header-bottom home-20 padding-top-15">
-    <div class="container container-two">
-        <div class="header-bottom-list">
+    <div class="">
+        <div class="header-bottom-list padding-20">
             <div class="updated-news-top">
-                <span class="update-news"><?php echo e(filter_static_option_value('home_20_breaking_news_section_'.$user_select_lang_slug.'_title',$static_field_data)); ?> </span>
+                <span class="update-news" style="padding: 27px 25px; font-size:25px"><?php echo e(filter_static_option_value('home_20_breaking_news_section_'.$user_select_lang_slug.'_title',$static_field_data)); ?> </span>
             </div>
             <div class="news-list-all">
                 <ul class="news-lists">
                     <?php $__currentLoopData = $breaking_news; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $news): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <li class="list">
-                            <a href="<?php echo e(route('frontend.blog.single', $news->slug)); ?>"> <?php echo e($news->title); ?> </a>
+                            <a href="<?php echo e(route('frontend.blog.single', $news->slug)); ?>"  style="font-size:25px; color:#000"> <?php echo e($news->title); ?> </a>
                         </li>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </ul>
@@ -85,7 +91,7 @@
 
 <!-- Left area starts -->
 <div class="left-area-01 home-20">
-    <div class="container container-two">
+    <div class="container container-two" style="max-width: 1720px;">
         <div class="row flex-xl-row-reverse justify-content-center">
             <div class="col-xl-8 col-lg-12">
                 <div class="header-slider-outer padding-top-40 padding-bottom-50">
